@@ -7,97 +7,106 @@
 
 /* Base */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+  font-family: 'Noto Serif TC', serif;
+  line-height: 1.8;
+  color: #433d3c; /* 深炭棕色 */
+  background-color: #f4f1ea; /* 燕麥白背景 */
 }
 
-/* Container */
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-
-/* Hero */
+/* Hero Section - 森林與大地 */
 .hero {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0f172a;
-  color: white;
+  background-color: #556b2f; /* 橄欖綠 */
+  background-image: linear-gradient(180deg, #556b2f 0%, #3e4a24 100%);
+  color: #f4f1ea;
   text-align: center;
 }
 
 .name {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
 }
 
 .tagline {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #dcd7c9;
 }
 
-/* Buttons */
+/* Buttons - 自然色調 */
 .hero-buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 12px 30px;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 0.9rem;
+  border-radius: 4px; /* 稍微方正一點更顯專業 */
+  font-size: 0.95rem;
+  transition: all 0.3s;
 }
 
 .primary-btn {
-  background-color: #38bdf8;
-  color: white;
+  background-color: #a0522d; /* 赭石紅/陶土色 */
+  color: #fff;
 }
 
 .secondary-btn {
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
+  border: 1px solid #dcd7c9;
+  color: #dcd7c9;
 }
 
-/* About */
+.btn:hover {
+  background-color: #f4f1ea;
+  color: #3e4a24;
+  transform: translateY(-2px);
+}
+
+/* Content Sections */
+.container {
+  width: 85%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 .about {
-  background-color: #f8fafc;
+  background-color: #f4f1ea;
   text-align: center;
 }
 
-/* Contact */
+.about h2 {
+  color: #a0522d;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #dcd7c9;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
 .contact {
-  background-color: #ffffff;
+  background-color: #e9e4d4; /* 較深的米色 */
   text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 25px;
 }
 
 .contact a {
-  color: #38bdf8;
+  color: #a0522d;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-  .name {
-    font-size: 2rem;
-  }
-
-  .tagline {
-    font-size: 1rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
+  .name { font-size: 2.5rem; }
+  .hero-buttons { flex-direction: column; }
 }
